@@ -1,6 +1,6 @@
-async function getDepartments() {
+async function getRandomRecipe() {
     const response = await fetch(
-        "/public/collection/v1/departments"
+        "https://www.themealdb.com/api/json/v1/1/random.php"
     );
     
     if (!response.ok) {
@@ -8,7 +8,7 @@ async function getDepartments() {
     }
     
     const data = await response.json();
-    return data.departments
+    return data.meals[0]
 }
 
-export default getDepartments
+export default getRandomRecipe

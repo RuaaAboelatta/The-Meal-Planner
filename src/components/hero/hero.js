@@ -1,5 +1,5 @@
 import './hero.css'
-function Hero(){
+function Hero({ onSurprise }){
     return(
         <div className="hero-sec">
             <div className="hero-info">
@@ -11,9 +11,15 @@ function Hero(){
             <div className="hero-search">
                 <form>
                     <input type='text' placeholder='Search ingredients'></input>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button className='search-button'>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
                 </form>
-                <button>Surprise Me</button>
+                <button className='surprise-button' onClick={onSurprise}>
+                    <i class="fa-solid fa-dice-five"></i>
+                    Surprise Me
+                </button>
             </div>
         </div>
     )

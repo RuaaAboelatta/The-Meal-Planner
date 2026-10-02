@@ -1,16 +1,79 @@
 .hero-sec{
     width: 100%;
-    height: 100vh;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.hero-sec img{
-    width: 70%;
-}
 .hero-info{
-    width: 40%;
+    width: 50%;
+    margin-top: 120px;
     text-align: center;
+}
+.hero-info h2 , .hero-info span{
+    font-family: "Playfair Display", serif;
+    font-size: 44px;
+}
+.hero-info span{
+    color: var(--red);
+    font-style: italic;
+}
+.hero-info p{
+    width: 90%;
+    margin: 10px auto;
+    color: var(--brown);
+    line-height: 25px;
+}
+.hero-search{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.hero-search form {
+    background-color:white;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: var(--gray) 0px 0px 10px;
+}
+.hero-search input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+.search-button{
+    top: 0px;
+    right: 5px;
+    background-color: var(--red);
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}
+.search-button i, .surprise-button i{
+    font-size: 12px;
+    margin-right: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+.surprise-button{
+    background-color: var(--light-green);
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    color: var(--green);
+    font-weight: 500;
 }

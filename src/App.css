@@ -1,9 +1,14 @@
 :root{
   --cream: #fff8f3;
   --red: #a93012;
+  --light-red: #FFB4A2;
   --brown: #59413b;
   --black: #2d2a25;
-  --gray: #ccc5bf41;
+  --gray: #ccc5bf73;
+  --green: #304e2f;
+  --light-green: #c8ecc2;
+  --yellow: #E89B3A;
+  --light-yellow: #FFDDBB;
 }
 *{
   margin: 0;

@@ -6,10 +6,10 @@ function Navbar(){
         <nav className="navbar">
             <div className="logo">
                 <img src="/logo.png" className="logo"></img>
-                <NavLink to='/' className='link'>The Meal</NavLink>
+                <h2>The Meal Planner</h2>
             </div>
             <div className="nav-links">
-                <NavLink to='/discover' className={navStyle}>Discover</NavLink>
+                <NavLink to='/' className={navStyle}>Discover</NavLink>
                 <NavLink to='/categories' className={navStyle}>Categories</NavLink>
                 <NavLink to='/mealplanner' className={navStyle}>Meal Planner</NavLink>
                 
