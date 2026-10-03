@@ -1,0 +1,10 @@
+.recipe-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 100px;
+    height: 100vh;
+}
+.ingredients-container{
+    width: 60%;
+}

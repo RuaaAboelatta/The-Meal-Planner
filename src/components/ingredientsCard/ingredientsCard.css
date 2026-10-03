@@ -1,0 +1,30 @@
+.ingredients-card{
+    width: 95%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: var(--gray) 0px 0px 10px;
+}
+ul{
+    list-style: none;
+    padding: 10px 20px;
+}
+li{
+    padding: 10px;
+    border-bottom: 1px solid var(--gray);
+}
+.red-tag{
+    color: var(--red);
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.card-top{
+    display: flex;
+    align-items: center;
+}
+.measure{
+    color: var(--red);
+    font-weight: 700;
+    margin-right: 10px;
+}
