@@ -1,6 +1,10 @@
+import CategoryCard from "../../components/categoryCard/CategoryCard"
+import "./categories.css"
 function Categories(){
     return(
-        <h2>tis is categories page</h2>
+        <div className="categories-grid">
+            <CategoryCard></CategoryCard>
+        </div>
     )
 }
 export default Categories

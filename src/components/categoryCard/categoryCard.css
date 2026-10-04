@@ -1,0 +1,23 @@
+.category-card{
+    background-color: white;
+    width: 25%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--gray) 0px 0px 10px;
+    margin: 30px;
+}
+.category-card .card-img{
+    background-color: var(--cream-2);
+}
+.card-body h2{
+    margin-bottom: 20px;
+}
+.linkto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 10px;
+    border-top: 1px solid var(--gray);
+    color: var(--red);
+}
