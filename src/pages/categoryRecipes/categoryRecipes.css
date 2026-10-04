@@ -1,0 +1,20 @@
+.small-card{
+  width: 30%;
+  height: 65vh;
+  margin-bottom: 40px;
+}
+.small-card .card-img{
+    height: 300px;
+}
+.tags{
+    margin-bottom: 10px;
+}
+.card-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+}

@@ -37,7 +37,7 @@ function CategoryCard(){
                         </div>
                         <div className="card-body">
                             <h2 className="title">{category.strCategory}</h2>
-                            <Link to={`/categories/${category.idCategory}`} className="linkto">
+                            <Link to={`/categories/${category.strCategory}`} className="linkto">
                                 Explore Collection
                                 <i class="fa-solid fa-arrow-right"></i>
                             </Link>
