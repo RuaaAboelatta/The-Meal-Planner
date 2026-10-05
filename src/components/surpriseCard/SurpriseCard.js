@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import getRandomRecipe from '../../api/getRandomRecipe';
+import { useFavorites } from '../../hooks/useFavorites';
 import './surpriseCard.css';
 
 function SurpriseCard() {
+  const {toggleFavorite, isFavorite} = useFavorites()
   const [meal, setMeal] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -24,6 +26,9 @@ function SurpriseCard() {
   if (loading) return <div className="surprise-card surprise-card--skeleton" />;
   if (error)   return <div className="surprise-card">Couldn't load a recipe.</div>;
   if (!meal)   return null;
+  const active = isFavorite(meal.idMeal)
+
+  
 
   return (
     <div className="surprise-card">
@@ -39,8 +44,8 @@ function SurpriseCard() {
             <span className="country-tag">{meal.strCountry}</span>
             <span className="type-tag">{meal.strCategory}</span>
           </div>
-          <button className="favorite-icon">
-            <i className="fa-regular fa-heart"></i>
+          <button className="favorite-icon" onClick={()=> toggleFavorite(meal)}>
+            <i className={active ? 'fa-solid fa-heart' : 'fa-regular fa-heart'}></i>
           </button>
         </div>
 

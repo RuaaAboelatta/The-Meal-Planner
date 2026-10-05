@@ -1,7 +1,16 @@
 .small-card{
   width: 30%;
-  height: 65vh;
+  height: 66vh;
   margin-bottom: 40px;
+}
+.card-body{
+    /* background-color: aqua; */
+    /* width: 90%; */
+    padding: 20px;
+}
+.recipe-link{
+    /* background-color: aquamarine; */
+    width: 100%;
 }
 .small-card .card-img{
     height: 300px;
