@@ -9,9 +9,12 @@ ul{
     list-style: none;
     padding: 10px 20px;
 }
-li{
+.ingredient{
     padding: 10px;
     border-bottom: 1px solid var(--gray);
+}
+.ingredient:last-child{
+    border: none;
 }
 .red-tag{
     color: var(--red);

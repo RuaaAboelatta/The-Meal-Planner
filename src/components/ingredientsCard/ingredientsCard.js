@@ -48,7 +48,7 @@ function IngredientsCard() {
       </div>
       <ul>
         {ingredients.map(({ name, measure }) => (
-          <li key={name}>
+          <li key={name} className="ingredient">
             <span className="measure">{measure}</span>
             <span>{name}</span>
           </li>
