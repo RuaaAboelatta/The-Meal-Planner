@@ -1,0 +1,32 @@
+.planner-card{
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 100px;
+}
+.planner-header{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.planner-header button{
+    margin: 0;
+}
+.planner-grid{
+    background-color: var(--cream-2);
+    border-radius: 10px;
+    height: 85%;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.day-title{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--red);
+}
+.day-empty{
+    padding: 20px;
+    color: var(--brown);
+}

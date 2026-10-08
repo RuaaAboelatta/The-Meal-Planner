@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
+import RandomRecipeCard from '../RandomRecipeCard/RandomRecipeCard'
 import './hero.css'
-function Hero({ onSurprise }){
+function Hero({ onSurprise, seed }){
     return(
         <div className="hero-sec">
             <div className="hero-info">
@@ -7,20 +9,16 @@ function Hero({ onSurprise }){
                 <p>
                     Search thousands of chef-tested recipes by ingredients in your fridge or browse weekly hand-crafted seasonal dishes curated for curious home cooks.
                 </p>
-            </div>
-            <div className="hero-search">
-                <form>
-                    <input type='text' placeholder='Search ingredients'></input>
-                    <button className='search-button'>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Search
-                    </button>
-                </form>
+                <Link to="/categories" className='red-button' onClick={onSurprise}>
+                    <i class="fa-solid fa-utensils"></i>
+                    Discover Recipes
+                </Link>
                 <button className='surprise-button' onClick={onSurprise}>
                     <i class="fa-solid fa-dice-five"></i>
                     Surprise Me
                 </button>
             </div>
+            <RandomRecipeCard key={seed}></RandomRecipeCard>
         </div>
     )
 }

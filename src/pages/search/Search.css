@@ -1,0 +1,40 @@
+.hero-search{
+    padding-top: 100px;
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+}
+.hero-search form {
+    background-color:white;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: var(--gray) 0px 0px 10px;
+}
+.hero-search input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+.search-button{
+    top: 0px;
+    right: 5px;
+    background-color: var(--red);
+    padding: 8px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    color: white;
+}

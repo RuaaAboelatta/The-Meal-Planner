@@ -1,15 +1,39 @@
 .instructions-card{
-    width: 95%;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
-    margin: 20px 0px;
+    margin: 30px 0px;
     box-shadow: var(--gray) 0px 0px 10px;
 }
-.step{
-    margin: 10px 0px;
+.instructions-card div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.tutorial-card{
+    background-color: var(--light-red);
     padding: 10px;
-    border-left: 3px solid var(--red) ;
+    border-radius: 50px;  
+    font-size: 14px;
+}
+.tutorial-card a{
+    text-decoration: none;
+    color: black;
+}
+.instructions-list{
+    /* width: 95%; */
+    /* background-color: white; */
+    border-radius: 20px;
+    padding: 0px;
+    /* margin: 20px 0px; */
+}
+.step{
+    background-color: white;
+    margin: 10px 0px;
+    padding: 20px;
+    border-left: 4px solid var(--red) ;
     border-radius: 10px;
     box-shadow: var(--gray) 0px 0px 5px;
+    text-align: justify;
 }

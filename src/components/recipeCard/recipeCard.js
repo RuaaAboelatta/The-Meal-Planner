@@ -1,52 +1,34 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import getRecipeDetails from "../../api/getRecipeDetails";
+import { Link } from "react-router-dom";
 import { useFavorites } from "../../hooks/useFavorites";
+import { usePlanner } from "../../hooks/usePlanner";
 import "./recipeCard.css"
-function RecipeCard(){
+function RecipeCard({recipe}){
     const {toggleFavorite, isFavorite} = useFavorites()
-    const {recipeId} = useParams()
-    const [recipe, setRecipe] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-    
-      useEffect(() => {
-        let cancelled = false;
-        setLoading(true);
-        setError(null);
-    
-        getRecipeDetails( recipeId)
-          .then((recipe) => { if (!cancelled) setRecipe(recipe); })
-          .catch((err) => { if (!cancelled) setError(err); })
-          .finally(() => { if (!cancelled) setLoading(false); });
-    
-        return () => { cancelled = true; };
-      }, [recipeId]);
-    
-      if (loading) return <div className="surprise-card surprise-card--skeleton" />;
-      if (error)   return <div className="surprise-card">Couldn't load a recipe.</div>;
-      if (!recipe)   return null;
+    const active = isFavorite(recipe.idMeal)
 
-      const active = isFavorite(recipe.idMeal)
-
-      return(
+    return(
         <div className="card">
-            <button className="favorite-icon" onClick={()=> toggleFavorite(recipe)}>
-                <i className={active ? 'fa-solid fa-heart' : 'fa-regular fa-heart'}></i>
-            </button>
+            <div className="top-bar">
+                <span className="tag country-tag">{recipe.strCountry}</span>
+                <div>
+                    <button className="calendar-icon">
+                        <i class="fa-regular fa-calendar"></i>
+                    </button>
+                    <button className="favorite-icon" onClick={()=> toggleFavorite(recipe)}>
+                        <i className={active ? 'fa-solid fa-heart' : 'fa-regular fa-heart'}></i>
+                    </button>
+                </div>
+            </div>
             <div className="card-img">
                 <img  src={recipe.strMealThumb}></img>
             </div>
             <div className="card-body">
-                <div className="tags">
-                    <span className="country-tag">{recipe.strCountry}</span>
-                    <span className="type-tag">{recipe.strCategory}</span>
-                </div>
-                <h2 className="title">{recipe.strMeal}</h2>
+                <Link to={`/recipe/${recipe.idMeal}`} className="title">
+                    {recipe.strMeal}
+                </Link>
+                
             </div>
         </div>
-      )
-    
-
+    )
 }
 export default RecipeCard

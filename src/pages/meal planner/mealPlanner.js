@@ -1,6 +1,7 @@
+import Planner from "../../components/Planner/Planner";
 function MealPlanner(){
   return(
-    <h2>tis is meal planner page</h2>
+    <Planner></Planner>
   )
 }
 export default MealPlanner

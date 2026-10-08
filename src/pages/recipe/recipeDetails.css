@@ -1,0 +1,29 @@
+.recipe-page{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 90px;
+    height: 100vh;
+}
+.recipe-container{
+    width: 35%;
+    align-self: center;
+}
+.recipe-page .title{
+    font-size: 24px;
+    font-weight: 700;
+}
+.recipe-page .card:hover{
+    transform: scale(1);
+}
+.recipe-page .card:hover .title{
+    color: black;
+}
+.ingredients-container{
+    width: 60%;
+    height:100%;
+    overflow: auto;
+    scrollbar-width: none;
+}

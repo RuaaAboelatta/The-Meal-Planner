@@ -11,8 +11,8 @@ function Navbar(){
             <div className="nav-links">
                 <NavLink to='/' className={navStyle}>Discover</NavLink>
                 <NavLink to='/categories' className={navStyle}>Categories</NavLink>
+                <NavLink to='/search' className={navStyle}>Search</NavLink>
                 <NavLink to='/mealplanner' className={navStyle}>Meal Planner</NavLink>
-                
             </div>
             <NavLink to='/favorites' className={navStyle}>
                 {({ isActive }) => (

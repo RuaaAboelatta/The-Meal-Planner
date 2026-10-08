@@ -2,7 +2,7 @@ import CategoryCard from "../../components/categoryCard/CategoryCard"
 import "./categories.css"
 function Categories(){
     return(
-        <div className="categories-grid">
+        <div className="grid">
             <CategoryCard></CategoryCard>
         </div>
     )
