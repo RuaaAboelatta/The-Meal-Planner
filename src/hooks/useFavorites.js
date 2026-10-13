@@ -14,7 +14,7 @@ export function FavoritesProvider({children}){
     const toggleFavorite = (recipe)=>{
         setFavorites((prev)=>{
             if (prev.some((rec) => rec.idMeal === recipe.idMeal)) {
-                return prev.filter((rec) => rec.idMeal !== recipe.idMeal);
+                return prev.filter((rec) => rec.idMeal !== recipe.idMeal)
             }
             return [...prev, recipe]
         })
@@ -31,5 +31,5 @@ export function FavoritesProvider({children}){
     )
 }
 export function useFavorites() {
-  return useContext(FavoriteContext);
+  return useContext(FavoriteContext)
 }

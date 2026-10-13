@@ -37,3 +37,6 @@ img{
 .grid .card{
   width: 22%;
 }
+.grid .skeleton-card{
+  height: 45vh;
+}

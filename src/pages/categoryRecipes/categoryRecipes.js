@@ -1,12 +1,21 @@
 import { useCategoryRecipes } from "../../hooks/useCategoryRecipes";
-import "./categoryRecipes.css"
 import RecipeCard from "../../components/recipeCard/recipeCard";
+import RecipeCardSkeleton from "../../components/RecipeCardSkeleton/RecipeCardSkeleton";
 
 function CategoryRecipes(){
     const {recipes, loading, error} = useCategoryRecipes()
-    if (loading) return <div className="recipe-detail">Loading...</div>;
-    if (error) return <div className="recipe-detail">Couldn't load recipe.</div>;
-    if (!recipes) return null;
+    if (loading){
+        return (
+            <div className="grid">
+               <RecipeCardSkeleton></RecipeCardSkeleton>
+               <RecipeCardSkeleton></RecipeCardSkeleton>
+               <RecipeCardSkeleton></RecipeCardSkeleton>
+               <RecipeCardSkeleton></RecipeCardSkeleton>
+            </div>
+        )
+    } 
+    if (error) return <div className="recipe-detail">Couldn't load recipe.</div>
+    if (!recipes) return null
 
     return(
         <div className="grid">

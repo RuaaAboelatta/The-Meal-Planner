@@ -1,15 +1,23 @@
-import "./categoryCard.css"
+import "./categoryCard.css";
 import { useCategory } from "../../hooks/useCategories";
 import { Link } from "react-router-dom";
+import CategoryCardSkeleton from "../CategoryCardSkeleton/CategoryCardSkeleton";
 function CategoryCard(){
     const {categories, loading, error} = useCategory()
     
-    if (loading) return <div className="surprise-card surprise-card--skeleton" />;
-    if (error)   return <div className="surprise-card">Couldn't load categories.</div>;
-    if (!categories)   return null;
+    if (loading) return (
+        <div className="grid">
+            <CategoryCardSkeleton></CategoryCardSkeleton>
+            <CategoryCardSkeleton></CategoryCardSkeleton>
+            <CategoryCardSkeleton></CategoryCardSkeleton>
+            <CategoryCardSkeleton></CategoryCardSkeleton>
+        </div>
+    )
+    if (error)   return <div>Couldn't load categories.</div>
+    if (!categories)   return null
       
     return(
-        <>
+        <div className="grid">
             {categories.map((category) => (
                 <div className="category-card" key={category.idCategory}>
                     <div className="card-img">
@@ -24,7 +32,7 @@ function CategoryCard(){
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
 export default CategoryCard

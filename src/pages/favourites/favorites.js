@@ -1,9 +1,7 @@
-import { useFavorites } from "../../hooks/useFavorites"
-import "./favorites.css"
-import RecipeCard from "../../components/recipeCard/recipeCard"
+import { useFavorites } from "../../hooks/useFavorites";
+import RecipeCard from "../../components/recipeCard/recipeCard";
 function Favourites(){
     const { favorites} = useFavorites()
-    
     return(
         <div className="grid">
             {favorites.map((recipe)=>{

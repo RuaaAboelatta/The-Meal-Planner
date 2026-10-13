@@ -1,10 +1,7 @@
-import CategoryCard from "../../components/categoryCard/CategoryCard"
-import "./categories.css"
+import CategoryCard from "../../components/categoryCard/CategoryCard";
 function Categories(){
     return(
-        <div className="grid">
-            <CategoryCard></CategoryCard>
-        </div>
+        <CategoryCard></CategoryCard>
     )
 }
 export default Categories

@@ -1,15 +1,24 @@
-import { useRecipe } from "../../hooks/useRecipe"
-import RecipeCard from "../../components/recipeCard/recipeCard"
-import IngredientsCard from "../../components/ingredientsCard/ingredientsCard"
-import InstructionsCard from "../../components/instructionsCard/InstructionsCard"
-import "./recipeDetails.css"
-import TutorialCard from "../../components/TutorialCard/TutorialCard"
+import { useRecipe } from "../../hooks/useRecipe";
+import RecipeCard from "../../components/recipeCard/recipeCard";
+import IngredientsCard from "../../components/ingredientsCard/ingredientsCard";
+import InstructionsCard from "../../components/instructionsCard/InstructionsCard";
+import "./recipeDetails.css";
+import RecipeCardSkeleton from "../../components/RecipeCardSkeleton/RecipeCardSkeleton";
 function RecipeDetails(){
-  const { recipe, loading, error } = useRecipe();
+  const { recipe, loading, error } = useRecipe()
 
-  if (loading) return <div className="recipe-detail">Loading...</div>;
-  if (error) return <div className="recipe-detail">Couldn't load recipe.</div>;
-  if (!recipe) return null;
+  if (loading) return (
+    <div className="recipe-page">
+      <div className="recipe-container">
+        <RecipeCardSkeleton></RecipeCardSkeleton>
+      </div>
+      <div className="ingredients-container">
+        <IngredientsCard></IngredientsCard>
+      </div>
+    </div>
+  )
+  if (error) return <div>Couldn't load recipe.</div>
+  if (!recipe) return null
 
   return(
     <div className="recipe-page">

@@ -1,29 +1,26 @@
 import { useMemo } from "react";
-import { useRecipe } from "../../hooks/useRecipe";
 import "./ingredientsCard.css";
 
 function IngredientsCard({recipe}) {
-
   const ingredients = useMemo(() => {
-    if (!recipe) return [];
+    if (!recipe) return []
 
-    const list = [];
+    const list = []
     for (let i = 1; i <= 20; i++) {
-      const name = recipe[`strIngredient${i}`];
-      const measure = recipe[`strMeasure${i}`];
+      const name = recipe[`strIngredient${i}`]
+      const measure = recipe[`strMeasure${i}`]
       if (name?.trim()) {
-        list.push({ name: name.trim(), measure: measure?.trim() ?? '' });
+        list.push({ name: name.trim(), measure: measure?.trim() ?? '' })
       }
     }
-    return list;
-  }, [recipe]);
-
+    return list
+  }, [recipe])
 
   return (
     <div className="ingredients-card">
       <div className="card-top">
-            <i className="fa-solid fa-kitchen-set red-icon"></i>
-            <h2 className="title">Ingredients</h2>
+        <i className="fa-solid fa-kitchen-set red-icon"></i>
+        <h2 className="title">Ingredients</h2>
       </div>
       <ul>
         {ingredients.map(({ name, measure }) => (
@@ -37,4 +34,4 @@ function IngredientsCard({recipe}) {
   );
 }
 
-export default IngredientsCard;
+export default IngredientsCard

@@ -1,9 +1,8 @@
 .ingredients-card{
-    /* width: 95%; */
     background-color: white;
+    box-shadow: var(--gray) 0px 0px 10px;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: var(--gray) 0px 0px 10px;
 }
 ul{
     list-style: none;

@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom"
-import "./navbar.css"
+import { NavLink } from "react-router-dom";
+import "./navbar.css";
 function Navbar(){
     const navStyle = ({isActive})=> isActive ? 'nav-link active' : 'nav-link'
     return(

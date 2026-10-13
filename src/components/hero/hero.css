@@ -8,7 +8,8 @@
     align-items: center;
 }
 .hero-sec .card{
-    width: 40%;
+    width: 35%;
+    height: 80vh;
 }
 .hero-info{
     width: 55%;

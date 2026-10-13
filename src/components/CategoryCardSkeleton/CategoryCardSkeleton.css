@@ -1,0 +1,7 @@
+.category-card-skeleton{
+    height: 40vh;
+}
+.category-card-skeleton .card-img{
+    height: 60%;
+    background-color: var(--gray);
+}

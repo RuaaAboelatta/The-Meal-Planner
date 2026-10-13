@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import RandomRecipeCard from '../RandomRecipeCard/RandomRecipeCard'
-import './hero.css'
+import { Link } from 'react-router-dom';
+import RandomRecipeCard from '../RandomRecipeCard/RandomRecipeCard';
+import './hero.css';
 function Hero({ onSurprise, seed }){
     return(
         <div className="hero-sec">

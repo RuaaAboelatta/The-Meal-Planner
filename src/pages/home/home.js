@@ -1,6 +1,5 @@
-import { useState } from "react"
-import Hero from "../../components/hero/hero"
-import "./home.css"
+import { useState } from "react";
+import Hero from "../../components/hero/hero";
 function Home(){
     const [seed, setSeed] = useState(0)
     return(

@@ -1,22 +1,23 @@
-.hero-search{
-    padding-top: 100px;
-    width: 85%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px auto;
+.search-page{
+    padding-top: 120px;
+    margin: auto;
 }
-.hero-search form {
+.search-page .grid{
+    padding-top: 0px;
+    margin-top: 50px;
+}
+.search-page form {
+    width: 85%;
+    margin: auto;
     background-color:white;
-    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 25px;
-    padding: 5px 10px;
+    border-radius: 30px;
+    padding:  10px;
     box-shadow: var(--gray) 0px 0px 10px;
 }
-.hero-search input{
+.search-page input{
     width: 100%;
     padding: 10px;
     border: none;
@@ -30,7 +31,7 @@ input:focus{
     top: 0px;
     right: 5px;
     background-color: var(--red);
-    padding: 8px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;

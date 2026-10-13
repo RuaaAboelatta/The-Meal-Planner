@@ -1,9 +1,9 @@
-import "./instructionsCard.css"
+import "./instructionsCard.css";
 function InstructionsCard({recipe}) {
   const steps = recipe.strInstructions
   .split(/\r\n/)                            
   .map((s) => s.replace(/^[.*0123456789▢■•\-\s]+/, '').trim())   
-  .filter(Boolean);        
+  .filter(Boolean)        
 
   return (
     <div className="instructions-card">
@@ -26,4 +26,4 @@ function InstructionsCard({recipe}) {
   );
 }
 
-export default InstructionsCard;
+export default InstructionsCard

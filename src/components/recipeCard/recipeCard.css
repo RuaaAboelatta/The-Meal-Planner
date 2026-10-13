@@ -38,3 +38,29 @@
 .top-bar div{
     display: flex;
 }
+.drop-down{
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: var(--gray) 0px 0px 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+.drop-down.closed{
+    display: none;
+}
+.drop-down-item{
+    padding: 5px 20px;
+    border-bottom: 1px solid var(--gray);
+    font-size: 14px;
+}
+.drop-down-item:last-child{
+    border: none;
+}
+.drop-down-item:hover{
+    cursor: pointer;
+    background-color: var(--gray);
+}
