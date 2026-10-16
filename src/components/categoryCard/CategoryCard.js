@@ -13,7 +13,14 @@ function CategoryCard(){
             <CategoryCardSkeleton></CategoryCardSkeleton>
         </div>
     )
-    if (error)   return <div>Couldn't load categories.</div>
+    if (error)   return (
+        <div className="grid">
+            <div className="result-message">
+                <img src="/assets/plate.png"></img>
+                <h2 className="title">Couldn’t Load Categories</h2>
+            </div>
+        </div>
+    )
     if (!categories)   return null
       
     return(
@@ -21,7 +28,7 @@ function CategoryCard(){
             {categories.map((category) => (
                 <div className="category-card" key={category.idCategory}>
                     <div className="card-img">
-                        <img src={category.strCategoryThumb} alt={category.strCategory} loading="lazy"/>
+                        <img src={category.strCategoryThumb} alt={category.strCategory}/>
                     </div>
                     <div className="card-body">
                         <h2 className="title">{category.strCategory}</h2>

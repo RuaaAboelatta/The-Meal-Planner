@@ -37,7 +37,10 @@ function Search(){
         </form>
         {
           searchWord === "" ? (
-            <div> serch for recipes</div>
+            <div className="result-message">
+              <img src="/assets/plate.png"></img>
+              <h2 className="title">Search For Recipes</h2>
+            </div>
           ) :
           loading ? (
             <div className="grid">
@@ -47,14 +50,21 @@ function Search(){
               <RecipeCardSkeleton></RecipeCardSkeleton>
             </div>
           ) : error ? (
-            <div className="recipe-detail">Couldn't load recipe.</div> 
+            <div className="result-message">
+             <img src="/assets/plate.png"></img>
+              <h2 className="title">Couldn't Load  A Recipe</h2>
+            </div> 
           ) : recipes ? (
             <div className="grid">
               {recipes.map((recipe) => (
                 <RecipeCard key={recipe.idMeal} recipe={recipe} />
               ))}
             </div>
-          ): (<div className="recipe-detail">no recipes found</div> )
+          ): (
+          <div className="result-message">
+            <img src="/assets/plate.png"></img>
+            <h2 className="title">No Recipes Found</h2>
+          </div> )
         }         
       </div>
     )

@@ -14,7 +14,14 @@ function CategoryRecipes(){
             </div>
         )
     } 
-    if (error) return <div className="recipe-detail">Couldn't load recipe.</div>
+    if (error) return (
+        <div className="grid">
+            <div className="result-message">
+                <img src="/assets/plate.png"></img>
+                <h2 className="title">Couldn’t Load Recipes</h2>
+            </div>
+        </div>
+    )
     if (!recipes) return null
 
     return(

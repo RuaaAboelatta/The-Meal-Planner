@@ -6,6 +6,7 @@
   --brown: #59413b;
   --black: #2d2a25;
   --gray: #ccc5bf73;
+  --light-gray: #f2eeeb73;
   --green: #304e2f;
   --light-green: #c8ecc2;
   --yellow: #E89B3A;
@@ -30,13 +31,49 @@ img{
   padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   row-gap: 40px;
+}
+.card, .category-card{
+  animation: popUp 1s;
 }
 .grid .card{
   width: 22%;
 }
 .grid .skeleton-card{
   height: 45vh;
+}
+.skeleton-card, .category-card-skeleton{
+  animation: skeleton 2s infinite , popUp 2s;
+}
+.result-message{
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+  background-color: white;
+  padding: 70px;
+  border-radius: 20px;
+  box-shadow: var(--gray) 0px 0px 10px;
+}
+.result-message img{
+  width: 20%;
+}
+.result-message .title{
+  color: var(--red);
+  font-weight: 600;
+}
+@keyframes skeleton{
+  50%{
+    opacity: 0.6;
+    transform: translateY(-5px);
+  }
+}
+@keyframes popUp{
+  0%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }

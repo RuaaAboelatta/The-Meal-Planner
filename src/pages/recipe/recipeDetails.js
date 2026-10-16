@@ -17,7 +17,14 @@ function RecipeDetails(){
       </div>
     </div>
   )
-  if (error) return <div>Couldn't load recipe.</div>
+  if (error) return (
+    <div className="grid">
+      <div className="result-message">
+        <img src="/assets/plate.png"></img>
+        <h2 className="title">Couldn’t Load Recipe</h2>
+      </div>
+    </div>
+  )
   if (!recipe) return null
 
   return(
