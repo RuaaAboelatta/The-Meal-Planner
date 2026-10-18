@@ -1,3 +1,6 @@
+.skeleton-card{
+    height: 80vh;
+}
 .skeleton-card .card-img{
     background-color: var(--gray);
     height: 90%;

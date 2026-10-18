@@ -1,0 +1,41 @@
+.step-grid{
+    background-color: white;
+    width: 100%;
+    padding: 50px 0px;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.step-grid .grid{
+    padding: 0;
+    width: 100%;
+}
+.step-grid .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.app-step{
+    background-color: var(--cream-2);
+    width: 30%;
+    height: 250px;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.app-step i{
+    font-size: 20px;
+    background-color: var(--light-red);
+    color: var(--red);
+    /* padding: 15px 25px; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.app-step h2{
+    margin: 20px 0px;
+    color: var(--red);
+}
