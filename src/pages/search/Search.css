@@ -39,3 +39,7 @@ input:focus{
     border-radius: 30px;
     color: white;
 }
+.search-button i{
+    color: white;
+    margin-right: 5px;
+}

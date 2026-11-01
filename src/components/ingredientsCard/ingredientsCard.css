@@ -1,6 +1,6 @@
 .ingredients-card{
     background-color: white;
-    box-shadow: var(--gray) 0px 0px 10px;
+    box-shadow: var(--gray) 0px 0px 15px;
     border-radius: 20px;
     padding: 20px;
 }

@@ -18,7 +18,11 @@
     border-radius: 10px;
     height: 85%;
     overflow: auto;
-    scrollbar-width: none;
+    scrollbar-width: none; 
+}
+.planner-grid .card{
+    background-color: aqua;
+    
 }
 .day-title{
     background-color: white;
@@ -32,6 +36,8 @@
 }
 .day-meals{
     display: flex;
+    flex-wrap: wrap;
+    
 }
 .day-meal{
     background-color: white;

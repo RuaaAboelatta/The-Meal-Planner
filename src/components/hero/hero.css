@@ -26,14 +26,14 @@
     color: var(--brown);
     line-height: 25px;
 }
-.surprise-button i, .discover-button i{
+.green-button i, .red-button i{
     font-size: 14px;
     margin-right: 5px;
 }
 button:hover{
     cursor: pointer;
 }
-.surprise-button, .discover-button, .red-button{
+.green-button, .discover-button, .red-button{
     background-color: var(--light-green);
     border: none;
     padding: 15px;
@@ -42,9 +42,12 @@ button:hover{
     font-size: 14px;
     font-weight: 500;
     margin-right: 20px;
+    text-decoration: none;
 }
-.red-button{
+.red-button, .red-button i{
     background-color: var(--light-red);
     color: var(--red);
-    text-decoration: none;
+}
+.green-button i {
+    color: var(--green);
 }

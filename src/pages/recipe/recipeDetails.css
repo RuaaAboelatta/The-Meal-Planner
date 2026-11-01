@@ -22,7 +22,7 @@
     transform: scale(1);
 }
 .recipe-page .card:hover .title{
-    color: black;
+    /* color: black; */
 }
 .ingredients-container{
     width: 60%;

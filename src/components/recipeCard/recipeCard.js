@@ -3,11 +3,13 @@ import { useFavorites } from "../../hooks/useFavorites";
 import { usePlanner } from "../../hooks/usePlanner";
 import { useDropdown } from "../../hooks/useDropdown";
 import "./recipeCard.css"
+import { useFeedback } from "../../hooks/useFeedback";
 function RecipeCard({recipe}){
     const {toggleFavorite, isFavorite} = useFavorites()
     const active = isFavorite(recipe.idMeal)
     const {  addToPlanner, days } = usePlanner()
     const {isOpen, toggleDropdown, closeDropdown} = useDropdown()
+    const { showMessage} = useFeedback()
     return(
         <div className="card">
             <div className="top-bar">
@@ -21,6 +23,7 @@ function RecipeCard({recipe}){
                             return(
                                 <li className="drop-down-item" onClick={()=> {addToPlanner(day, recipe);
                                     closeDropdown()
+                                    showMessage('Added To Planner Successfully!')
                                 }}>{day}</li>
                             )
                         })}
@@ -36,8 +39,7 @@ function RecipeCard({recipe}){
             <div className="card-body">
                 <Link to={`/recipe/${recipe.idMeal}`} className="title">
                     {recipe.strMeal}
-                </Link>
-                
+                </Link>  
             </div>
         </div>
     )

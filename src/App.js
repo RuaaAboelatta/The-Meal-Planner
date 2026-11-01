@@ -8,8 +8,11 @@ import Favourites from './pages/favourites/favorites';
 import RecipeDetails from './pages/recipe/recipeDetails';
 import { Route, Routes } from 'react-router-dom';
 import CategoryRecipes from './pages/categoryRecipes/categoryRecipes';
+import { useFeedback } from './hooks/useFeedback';
+import FeedbackMessage from './components/feedbackMessage/FeedbackMessage';
 
 function App() {
+  const {message} = useFeedback()
   return (
     <>
       <Navbar></Navbar>
@@ -21,8 +24,8 @@ function App() {
         <Route path='/mealplanner' element={<MealPlanner></MealPlanner>}></Route>
         <Route path='/favorites' element={<Favourites></Favourites>}></Route>
         <Route path='/recipe/:recipeId' element={<RecipeDetails></RecipeDetails>}></Route>
-
       </Routes>
+      {message ? <FeedbackMessage msg={message}></FeedbackMessage> : ""}
     </>
   );
 }

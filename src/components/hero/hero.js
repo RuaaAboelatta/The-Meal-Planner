@@ -13,7 +13,7 @@ function Hero({ onSurprise, seed }){
                     <i class="fa-solid fa-utensils"></i>
                     Discover Recipes
                 </Link>
-                <button className='surprise-button' onClick={onSurprise}>
+                <button className='green-button' onClick={onSurprise}>
                     <i class="fa-solid fa-dice-five"></i>
                     Surprise Me
                 </button>

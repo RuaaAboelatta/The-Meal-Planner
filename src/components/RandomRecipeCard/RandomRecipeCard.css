@@ -43,6 +43,9 @@
     z-index: 10;
     margin-left: 10px;
 }
+.favorite-icon i, .calendar-icon i{
+    color: var(--red);
+}
 .random-recipe-card-body{
     width: 60%;
 }
