@@ -26,3 +26,13 @@
     border-top: 1px solid var(--gray);
     color: var(--red);
 }
+.linkto i{
+    color: var(--red);
+}
+@media screen and (max-width: 775px) {
+    .category-card{
+        width: 47%;
+        margin: 0;
+    }
+    
+}

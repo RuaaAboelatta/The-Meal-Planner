@@ -39,3 +39,16 @@
     margin: 20px 0px;
     color: var(--red);
 }
+@media screen and (max-width: 775px){
+    .step-grid .grid{
+        flex-direction: column;
+    }
+    .container > h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .app-step{
+        width: 100%;
+        margin: 0;
+    } 
+}

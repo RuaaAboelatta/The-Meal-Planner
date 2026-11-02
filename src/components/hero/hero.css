@@ -51,3 +51,24 @@ button:hover{
 .green-button i {
     color: var(--green);
 }
+@media screen and (max-width: 775px) {
+    .hero-sec{
+        /* background-color: aqua; */
+        flex-direction: column;
+        padding: 100px 20px;
+        height: auto;
+    }
+    .hero-info{
+        /* background-color: aquamarine; */
+        width: 100%;
+    }
+    .hero-info p{
+        text-align: justify;
+
+    }
+    .hero-sec .card{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+}

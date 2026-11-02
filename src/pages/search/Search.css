@@ -43,3 +43,11 @@ input:focus{
     color: white;
     margin-right: 5px;
 }
+@media screen and (max-width: 775px){
+    .search-page{
+        padding: 100px 20px;
+    }
+    .search-page form{
+        width: 100%;
+    }
+}

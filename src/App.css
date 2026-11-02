@@ -29,6 +29,7 @@ img{
 .grid{
   width: 85%;
   margin: auto;
+  margin-bottom: 50px;
   padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -76,5 +77,14 @@ img{
   }
   100%{
     transform: translateY(0);
+  }
+}
+@media screen and (max-width: 775px) {
+  .result-message{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .result-message img{
+    width: 50%;
   }
 }

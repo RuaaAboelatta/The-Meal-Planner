@@ -10,7 +10,7 @@ function Footer(){
                     <i class="fa-solid fa-utensils"></i>
                     Browse Recipes
                 </Link>
-                <Link to="/categories" className='green-button'>
+                <Link to="/mealplanner" className='green-button'>
                     <i class="fa-regular fa-calendar"></i>
                     Plan Your Week
                 </Link>

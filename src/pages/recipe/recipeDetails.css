@@ -30,3 +30,19 @@
     overflow: auto;
     scrollbar-width: none;
 }
+@media screen and (max-width: 775px){
+    .recipe-page{
+        flex-direction: column;
+        width: 100%;
+        padding: 100px 20px;
+        height: auto;
+    }
+    .recipe-container{
+        width: 100%;
+    }
+    .ingredients-container{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+}
