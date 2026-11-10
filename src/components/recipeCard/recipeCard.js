@@ -4,15 +4,17 @@ import { usePlanner } from "../../hooks/usePlanner";
 import { useDropdown } from "../../hooks/useDropdown";
 import "./recipeCard.css"
 import { useFeedback } from "../../hooks/useFeedback";
+
 function RecipeCard({recipe}){
     const {toggleFavorite, isFavorite} = useFavorites()
     const active = isFavorite(recipe.idMeal)
     const {  addToPlanner, days } = usePlanner()
     const {isOpen, toggleDropdown, closeDropdown} = useDropdown()
     const { showMessage} = useFeedback()
+    
     return(
         <div className="card">
-            <div className="top-bar">
+            <div className="card-header">
                 <span className="tag country-tag">{recipe.strCountry}</span>
                 <div>
                     <button className="calendar-icon" onClick={toggleDropdown}>

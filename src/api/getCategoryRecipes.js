@@ -10,5 +10,4 @@ async function getCategoryRecipes(categoryName){
     const data = await response.json()
     return data.meals
 }
-
 export default getCategoryRecipes

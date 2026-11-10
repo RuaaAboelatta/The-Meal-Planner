@@ -1,49 +1,47 @@
-.step-grid{
+.step-sec{
     background-color: white;
     width: 100%;
     padding: 50px 0px;
 }
-.container{
+.grid-container{
     width: 85%;
     margin: auto;
 }
-.step-grid .grid{
+.step-sec .grid{
     padding: 0;
     width: 100%;
 }
-.step-grid .title{
+.step-sec .title{
     font-size: 24px;
     font-weight: 600;
 }
 .app-step{
-    background-color: var(--cream-2);
     width: 30%;
     height: 250px;
     padding: 30px;
     margin-top: 30px;
     border-radius: 20px;
+    background-color: var(--cream-2);
 }
 .app-step i{
     font-size: 20px;
-    background-color: var(--light-red);
-    color: var(--red);
-    /* padding: 15px 25px; */
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: var(--light-red);
 }
 .app-step h2{
     margin: 20px 0px;
     color: var(--red);
 }
 @media screen and (max-width: 775px){
-    .step-grid .grid{
+    .step-sec .grid{
         flex-direction: column;
     }
-    .container > h2{
+    .grid-container > h2{
         text-align: center;
         margin-bottom: 20px;
     }

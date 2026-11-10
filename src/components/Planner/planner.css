@@ -1,7 +1,7 @@
 .planner-card{
     width: 85%;
-    height: 100vh;
     margin: auto;
+    height: 100vh;
     padding-top: 100px;
 }
 .planner-header{
@@ -9,6 +9,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.planner-header div{
+    display: flex;
+    align-items: center;
+}
+.planner-header .title{
+    color: var(--red);
 }
 .planner-header button{
     margin: 0;
@@ -21,10 +28,10 @@
     scrollbar-width: none; 
 }
 .day-title{
-    background-color: white;
     padding: 20px;
+    background-color: white;
     border-radius: 10px;
-    color: var(--red);
+    color: var(--brown);
 }
 .day-empty{
     padding: 20px;
@@ -37,7 +44,7 @@
 .day-meal{
     background-color: white;
     width: 20%;
-    margin-left: 20px;
+    margin: 20px;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -62,5 +69,6 @@
     .day-meal{
         width: 100%;
         margin: 0;
+        margin-top: 20px;
     }
 }

@@ -1,7 +1,8 @@
-import "./categoryCard.css";
-import { useCategory } from "../../hooks/useCategories";
 import { Link } from "react-router-dom";
+import { useCategory } from "../../hooks/useCategories";
 import CategoryCardSkeleton from "../CategoryCardSkeleton/CategoryCardSkeleton";
+import "./categoryCard.css";
+
 function CategoryCard(){
     const {categories, loading, error} = useCategory()
     
@@ -32,7 +33,7 @@ function CategoryCard(){
                     </div>
                     <div className="card-body">
                         <h2 className="title">{category.strCategory}</h2>
-                        <Link to={`/categories/${category.strCategory}`} className="linkto">
+                        <Link to={`/categories/${category.strCategory}`} className="link-to-recipes">
                             Explore Collection
                             <i class="fa-solid fa-arrow-right"></i>
                         </Link>

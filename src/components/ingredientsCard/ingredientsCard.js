@@ -18,8 +18,8 @@ function IngredientsCard({recipe}) {
 
   return (
     <div className="ingredients-card">
-      <div className="card-top">
-        <i className="fa-solid fa-kitchen-set red-icon"></i>
+      <div className="card-header">
+        <i className="fa-solid fa-kitchen-set title-icon"></i>
         <h2 className="title">Ingredients</h2>
       </div>
       <ul>
@@ -31,7 +31,6 @@ function IngredientsCard({recipe}) {
         ))}
       </ul>
     </div>
-  );
+  )
 }
-
 export default IngredientsCard

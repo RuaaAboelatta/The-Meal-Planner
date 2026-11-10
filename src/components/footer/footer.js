@@ -5,12 +5,12 @@ function Footer(){
         <div className="footer">
             <img src="/assets/logo.png"></img>
             <h2 className="title">Ready To Find Your Next Favorite Meal?</h2>
-            <div className="btns">
-                <Link to="/categories" className='red-button'>
+            <div className="btns-container">
+                <Link to="/categories" className='button red-button'>
                     <i class="fa-solid fa-utensils"></i>
                     Browse Recipes
                 </Link>
-                <Link to="/mealplanner" className='green-button'>
+                <Link to="/mealplanner" className='button green-button'>
                     <i class="fa-regular fa-calendar"></i>
                     Plan Your Week
                 </Link>

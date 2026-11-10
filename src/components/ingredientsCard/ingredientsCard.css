@@ -1,8 +1,8 @@
 .ingredients-card{
-    background-color: white;
-    box-shadow: var(--gray) 0px 0px 15px;
-    border-radius: 20px;
     padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: var(--gray) 0px 0px 10px;
 }
 ul{
     list-style: none;
@@ -14,16 +14,6 @@ ul{
 }
 .ingredient:last-child{
     border: none;
-}
-.red-icon{
-    color: var(--red);
-    border-radius: 50%;
-    font-size: 20px;
-    margin-right: 10px;
-}
-.card-top{
-    display: flex;
-    align-items: center;
 }
 .measure{
     color: var(--red);

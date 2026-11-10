@@ -32,7 +32,6 @@ function CategoryRecipes(){
                 )
             })}
         </div>
-        
-      
-    )}
+    )
+}
 export default CategoryRecipes

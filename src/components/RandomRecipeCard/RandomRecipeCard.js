@@ -17,6 +17,6 @@ function RandomRecipeCard() {
 
   return (
     <RecipeCard recipe={recipe}></RecipeCard>
-  );
+  )
 }
 export default RandomRecipeCard

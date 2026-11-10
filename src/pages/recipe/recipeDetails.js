@@ -4,6 +4,7 @@ import IngredientsCard from "../../components/ingredientsCard/ingredientsCard";
 import InstructionsCard from "../../components/instructionsCard/InstructionsCard";
 import "./recipeDetails.css";
 import RecipeCardSkeleton from "../../components/RecipeCardSkeleton/RecipeCardSkeleton";
+
 function RecipeDetails(){
   const { recipe, loading, error } = useRecipe()
 

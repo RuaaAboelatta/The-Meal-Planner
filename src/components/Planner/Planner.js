@@ -7,11 +7,11 @@ function Planner(){
     return(
         <div className="planner-card">
             <div className="planner-header">
-                <div className="card-top">
-                    <i class="fa-regular fa-calendar red-icon"></i>
+                <div>
+                    <i class="fa-regular fa-calendar title-icon"></i>
                     <h1 className="title">Weekly Planner</h1>
                 </div>
-                <button onClick={clearPlanner} className="red-button">Clear Week</button>
+                <button onClick={clearPlanner} className="button red-button">Clear Week</button>
             </div>
             <div className="planner-grid">
                 {days.map((day) => {

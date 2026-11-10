@@ -8,7 +8,6 @@ async function searchRecipe(searchWord){
     }
     
     const data = await response.json()
-    return data.meals
+    return data.meals.filter((meal) => meal.strCategory !== "Pork") ?? []
 }
-
 export default searchRecipe

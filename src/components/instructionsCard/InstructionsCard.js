@@ -7,14 +7,15 @@ function InstructionsCard({recipe}) {
 
   return (
     <div className="instructions-card">
-      <div >
-        <div className="card-top">
-          <i class="fa-solid fa-list-check red-icon"></i>
+      <div>
+        <div className="card-header">
+          <i class="fa-solid fa-list-check title-icon"></i>
           <h2 className="title">Instructions</h2>
         </div>
-        <div className="tutorial-card">
-          <i class="fa-solid fa-circle-play red-icon"></i>
-          <a href={recipe.strYoutube} target="_blank" > Watch a tutorial</a>
+        <div className="tutorial-icon">
+          <a href={recipe.strYoutube} target="_blank" >
+            <i class="fa-solid fa-circle-play"></i>
+          </a>
         </div>
       </div>
       <ul className="instructions-list">

@@ -38,33 +38,33 @@ function Search(){
         {
           searchWord === "" ? (
             <div className="result-message">
-              <img src="/assets/plate.png"></img>
+              <img src="/assets/plate.png" alt="" />
               <h2 className="title">Search For Recipes</h2>
             </div>
-          ) :
-          loading ? (
+          ) : loading ? (
             <div className="grid">
-              <RecipeCardSkeleton></RecipeCardSkeleton>
-              <RecipeCardSkeleton></RecipeCardSkeleton>
-              <RecipeCardSkeleton></RecipeCardSkeleton>
-              <RecipeCardSkeleton></RecipeCardSkeleton>
+              <RecipeCardSkeleton />
+              <RecipeCardSkeleton />
+              <RecipeCardSkeleton />
+              <RecipeCardSkeleton />
             </div>
           ) : error ? (
             <div className="result-message">
-             <img src="/assets/plate.png"></img>
-              <h2 className="title">Couldn't Load  A Recipe</h2>
-            </div> 
-          ) : recipes ? (
+              <img src="/assets/plate.png" alt="" />
+              <h2 className="title">Couldn't Load A Recipe</h2>
+            </div>
+          ) : recipes?.length === 0 ? (        
+            <div className="result-message">
+              <img src="/assets/plate.png" alt="" />
+              <h2 className="title">No Recipes Found</h2>
+            </div>
+          ) : recipes ? (                        
             <div className="grid">
               {recipes.map((recipe) => (
                 <RecipeCard key={recipe.idMeal} recipe={recipe} />
               ))}
             </div>
-          ): (
-          <div className="result-message">
-            <img src="/assets/plate.png"></img>
-            <h2 className="title">No Recipes Found</h2>
-          </div> )
+          ) : null                            
         }         
       </div>
     )

@@ -1,9 +1,11 @@
 .recipe-page{
-    width: 85%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: start;
+    padding-right: 30px ;
+    padding-left: 60px;
     padding-top: 90px;
     height: 100vh;
 }
@@ -21,13 +23,11 @@
 .recipe-page .card:hover{
     transform: scale(1);
 }
-.recipe-page .card:hover .title{
-    /* color: black; */
-}
 .ingredients-container{
-    width: 60%;
+    padding: 30px;
+    width: 65%;
     height:100%;
-    overflow: auto;
+    overflow-y: auto;
     scrollbar-width: none;
 }
 @media screen and (max-width: 775px){
@@ -43,6 +43,7 @@
     .ingredients-container{
         width: 100%;
         margin-top: 30px;
+        padding: 0;
+        overflow:unset;
     }
-    
 }

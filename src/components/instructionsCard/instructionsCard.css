@@ -11,26 +11,26 @@
     align-items: center;
     margin-bottom: 10px;
 }
-.tutorial-card{
+.tutorial-icon{
     background-color: var(--light-red);
-    padding: 10px;
-    border-radius: 50px;  
-    font-size: 14px;
+    padding: 5px;
+    border-radius: 50%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.tutorial-card a{
-    text-decoration: none;
-    color: black;
+.tutorial-icon a{
+    font-size: 20px;
 }
 .instructions-list{
-    border-radius: 20px;
     padding: 0px;
+    border-radius: 20px;
 }
 .step{
-    background-color: white;
-    margin: 10px 0px;
     padding: 20px;
-    border-left: 4px solid var(--red) ;
-    border-radius: 10px;
-    box-shadow: var(--gray) 0px 0px 5px;
+    margin: 10px 0px;
     text-align: justify;
+    border-radius: 10px;
+    border-left: 4px solid var(--red) ;
+    box-shadow: var(--gray) 0px 0px 5px;
 }

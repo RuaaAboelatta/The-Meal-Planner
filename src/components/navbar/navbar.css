@@ -5,8 +5,8 @@
     justify-content: space-between;
     align-items: end;
     position: fixed;
-    background-color: var(--cream);
     z-index: 100;
+    background-color: var(--cream);
 }
 .logo{
     display: flex;
@@ -14,15 +14,14 @@
     align-items: end;
 }
 .logo img{
-    width: 55px;
+    width: 50px;
     padding: 5px;
 }
-.logo h2{
-    text-decoration: none;
+.logo .title{
     font-size: 26px;
     font-weight: 600;
-    color: var(--black);
-    font-family: "Playfair Display", serif;
+    font-family: "Bonheur Royale", cursive;
+    color: var(--brown);
 }
 .nav-links{
     display: flex;
@@ -40,50 +39,44 @@
 .nav-link::after{
     width: 6px;
     height: 6px;
-    background-color: var(--red);
     content: '';
     position: absolute;
     border-radius: 50%;
+    background-color: var(--red);
     left: 50%;
     top: 150%;
-    transform: translate(-50%, -50%);
     opacity: 0;
     transition: 0.5s;
+    transform: translate(-50%, -50%);
 }
 .nav-link.active::after{
     opacity: 1;
 }
-.navbar>:last-child::after{
-    display: none;
-}
 .bars{
-    font-size: 24px;
+    font-size: 22px;
     display: none;
     transition: 0.5s;
-
+    padding-bottom: 5px;
 }
 @media screen and (max-width: 775px){
-
     .bars{
         display: block;
     }
     .bars-open{
-        font-size: 24px;
         color: var(--red);
     }
-
     .nav-links{
-        position: fixed;
         top: 60px;
         right: 0;
         width: 100%;
-        padding: 20px 0px;
-        height: 250px;
-        background-color: var(--cream);
+        position: fixed;
         flex-direction: column;
         align-items: start;
-        box-shadow: var(--gray) 10px 10px 10px;
+        padding: 20px 0px;
+        height: 230px;
         transition: 0.5s;
+        background-color: var(--cream);
+        box-shadow: var(--gray) 10px 10px 10px;
     }
     .nav-links.closed{
         height: 0;
@@ -93,12 +86,10 @@
         opacity: 0;
     }
     .nav-link{
-        /* background-color: aqua; */
         transition: 0.5s 0.2s;
     }
     .nav-link::after{
         left: 120%;
         top: 60%;
-    }
-    
+    }  
 }

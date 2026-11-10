@@ -1,4 +1,4 @@
-async function getRandomRecipe(){
+async function getRandomRecipe(attempt = 0){
     const response = await fetch(
         "https://www.themealdb.com/api/json/v1/1/random.php"
     )
@@ -8,7 +8,10 @@ async function getRandomRecipe(){
     }
     
     const data = await response.json()
-    return data.meals[0]
+    const meal = data.meals[0]
+    if (meal.strCategory == "Pork" && attempt < 5){
+        return getRandomRecipe(attempt + 1)
+    }
+    return meal
 }
-
 export default getRandomRecipe

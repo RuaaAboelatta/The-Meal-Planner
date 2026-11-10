@@ -19,8 +19,8 @@ function HowItWorks(){
     ]
 
     return(
-        <div className="step-grid">
-            <div className="container">
+        <div className="step-sec">
+            <div className="grid-container">
                 <h2 className="title">How It Works: Easy & Delicious</h2>
                 <div className="grid">
                     {appsteps.map((step)=>(

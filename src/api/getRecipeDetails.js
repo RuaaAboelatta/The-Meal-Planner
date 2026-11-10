@@ -10,5 +10,4 @@ async function getRecipeDetails(recipeId){
     const data = await response.json()
     return data.meals[0]
 }
-
 export default getRecipeDetails
