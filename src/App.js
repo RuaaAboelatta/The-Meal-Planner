@@ -4,7 +4,7 @@ import Home from './pages/home/home';
 import Categories from './pages/categories/categories';
 import Search from './pages/search/Search';
 import MealPlanner from './pages/meal planner/mealPlanner';
-import Favourites from './pages/favourites/favorites';
+import Favourites from './pages/favorites/favorites';
 import RecipeDetails from './pages/recipe/recipeDetails';
 import { Route, Routes } from 'react-router-dom';
 import CategoryRecipes from './pages/categoryRecipes/categoryRecipes';

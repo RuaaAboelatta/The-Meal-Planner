@@ -7,7 +7,7 @@ function Favourites(){
             {favorites.length === 0 ?
               (
                 <div className="result-message">
-                    <img src="/assets/plate.png"></img>
+                    <img src="/assets/plate.png" alt="plate"></img>
                     <h2 className="title">No Favorite Recipes </h2>
                 </div>  
             ): favorites.map((recipe)=>{

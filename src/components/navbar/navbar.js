@@ -8,7 +8,7 @@ function Navbar(){
     return(
         <nav className="navbar">
             <div className="logo">
-                <img src="/assets/logo.png" className="logo"></img>
+                <img src="/assets/logo.png" className="logo" alt="logo"></img>
                 <h2 className="title">The Meal Planner</h2>
             </div>
             <div className={`nav-links ${isOpen ? "" : "closed"}`}>

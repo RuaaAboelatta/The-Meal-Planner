@@ -17,7 +17,7 @@ function CategoryCard(){
     if (error)   return (
         <div className="grid">
             <div className="result-message">
-                <img src="/assets/plate.png"></img>
+                <img src="/assets/plate.png" alt="plate"></img>
                 <h2 className="title">Couldn’t Load Categories</h2>
             </div>
         </div>

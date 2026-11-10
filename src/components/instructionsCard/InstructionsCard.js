@@ -13,7 +13,7 @@ function InstructionsCard({recipe}) {
           <h2 className="title">Instructions</h2>
         </div>
         <div className="tutorial-icon">
-          <a href={recipe.strYoutube} target="_blank" >
+          <a href={recipe.strYoutube} target="_blank" rel="noreferrer">
             <i class="fa-solid fa-circle-play"></i>
           </a>
         </div>

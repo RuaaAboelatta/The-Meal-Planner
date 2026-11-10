@@ -9,7 +9,7 @@ async function getRandomRecipe(attempt = 0){
     
     const data = await response.json()
     const meal = data.meals[0]
-    if (meal.strCategory == "Pork" && attempt < 5){
+    if (meal.strCategory === "Pork" && attempt < 5){
         return getRandomRecipe(attempt + 1)
     }
     return meal

@@ -38,7 +38,7 @@ function Search(){
         {
           searchWord === "" ? (
             <div className="result-message">
-              <img src="/assets/plate.png" alt="" />
+              <img src="/assets/plate.png" alt="plate" />
               <h2 className="title">Search For Recipes</h2>
             </div>
           ) : loading ? (
@@ -50,12 +50,12 @@ function Search(){
             </div>
           ) : error ? (
             <div className="result-message">
-              <img src="/assets/plate.png" alt="" />
+              <img src="/assets/plate.png" alt="plate" />
               <h2 className="title">Couldn't Load A Recipe</h2>
             </div>
           ) : recipes?.length === 0 ? (        
             <div className="result-message">
-              <img src="/assets/plate.png" alt="" />
+              <img src="/assets/plate.png" alt="plate" />
               <h2 className="title">No Recipes Found</h2>
             </div>
           ) : recipes ? (                        

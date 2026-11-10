@@ -18,7 +18,7 @@ export function useCategoryRecipes(){
           .finally(() => { if (!cancelled) setLoading(false) })
     
         return () => { cancelled = true }
-    }, [])
+    }, [categoryName])
 
     return{
         recipes,

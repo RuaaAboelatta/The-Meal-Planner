@@ -3,7 +3,7 @@ import "./footer.css";
 function Footer(){
     return(
         <div className="footer">
-            <img src="/assets/logo.png"></img>
+            <img src="/assets/logo.png" alt="logo"></img>
             <h2 className="title">Ready To Find Your Next Favorite Meal?</h2>
             <div className="btns-container">
                 <Link to="/categories" className='button red-button'>

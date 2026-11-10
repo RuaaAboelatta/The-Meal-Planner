@@ -11,7 +11,7 @@ function RecipeCard({recipe}){
     const {  addToPlanner, days } = usePlanner()
     const {isOpen, toggleDropdown, closeDropdown} = useDropdown()
     const { showMessage} = useFeedback()
-    
+
     return(
         <div className="card">
             <div className="card-header">
@@ -36,7 +36,7 @@ function RecipeCard({recipe}){
                 </div>
             </div>
             <div className="card-img">
-                <img  src={recipe.strMealThumb}></img>
+                <img  src={recipe.strMealThumb} alt="recipe"></img>
             </div>
             <div className="card-body">
                 <Link to={`/recipe/${recipe.idMeal}`} className="title">
