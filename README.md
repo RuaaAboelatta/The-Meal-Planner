@@ -25,6 +25,7 @@ A modern recipe discovery app built with React. Search thousands of recipes by n
 ## Screenshots
 ### Desktop
 <img width="1763" height="1888" alt="Screenshot_10-11-2026_133110_localhost" src="https://github.com/user-attachments/assets/ecd95349-f4b0-412f-a34a-40daefd005c8" />
+
 ### Mobile
 <img width="633" height="3121" alt="Screenshot_10-11-2026_133219_localhost" src="https://github.com/user-attachments/assets/3d20c4c7-4697-4938-9631-2937e1322d77" />
 
