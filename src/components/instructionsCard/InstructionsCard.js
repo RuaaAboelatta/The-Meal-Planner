@@ -7,8 +7,8 @@ function InstructionsCard({recipe}) {
 
   return (
     <div className="instructions-card">
-      <div>
-        <div className="card-header">
+      <div className="card-header">
+        <div>
           <i class="fa-solid fa-list-check title-icon"></i>
           <h2 className="title">Instructions</h2>
         </div>

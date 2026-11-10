@@ -4,6 +4,10 @@
     background-color: white;
     box-shadow: var(--gray) 0px 0px 10px;
 }
+.ingredients-card .card-header{
+    position: static;
+    justify-content: left;
+}
 ul{
     list-style: none;
     padding: 10px 20px;
